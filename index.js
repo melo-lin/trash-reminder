@@ -1,14 +1,16 @@
-import * as line from '@line/bot-sdk'
-import express from 'express'
+'use strict';
+
+const line = require('@line/bot-sdk');
+const express = require('express');
 
 // create LINE SDK config from env variables
 const config = {
-  channelSecret: process.env.CHANNEL_SECRET,
+  channelSecret: "3eb492079914e41fc4baef8b7965021c",
 };
 
 // create LINE SDK client
 const client = new line.messagingApi.MessagingApiClient({
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
+  channelAccessToken: "Y0PMV50P3nuZa9D92xS+m2n0FeKxfyd9ux5mqa+/5gXUOiIprgeBOeJ2qK8DXdP3jP5wqcnOiMtztWBazmsQiqWz+EJpkQiJ0S2KEA/CA+gSmPauUiox1ZtyrIP5zcgSt6Y2iQSTf7dbB7Uli5qTkwdB04t89/1O/w1cDnyilFU="
 });
 
 // create Express app
