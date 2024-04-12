@@ -4,11 +4,11 @@
   "description": "An example LINE bot just to echo messages written in CommonJS",
   "main": "index.js",
   "scripts": {
-    "build-sdk": "cd line-bot-sdk-nodejs; npm i; npm run build",
+    "build-sdk": "cd ../..; npm i; npm run build",
     "start": "node ."
   },
   "dependencies": {
-    "@line/bot-sdk": "line-bot-sdk-nodejs",
+    "@line/bot-sdk": "^9.1.0",
     "express": "^4.17.3"
   }
 }
