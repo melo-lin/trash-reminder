@@ -5,12 +5,12 @@ const express = require('express');
 
 // create LINE SDK config from env variables
 const config = {
-  channelSecret: process.env.CHANNEL_SECRET,
+  channelSecret: "3eb492079914e41fc4baef8b7965021c",
 };
 
 // create LINE SDK client
 const client = new line.messagingApi.MessagingApiClient({
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
+  channelAccessToken: "Y0PMV50P3nuZa9D92xS+m2n0FeKxfyd9ux5mqa+/5gXUOiIprgeBOeJ2qK8DXdP3jP5wqcnOiMtztWBazmsQiqWz+EJpkQiJ0S2KEA/CA+gSmPauUiox1ZtyrIP5zcgSt6Y2iQSTf7dbB7Uli5qTkwdB04t89/1O/w1cDnyilFU="
 });
 
 // create Express app
@@ -47,7 +47,7 @@ function handleEvent(event) {
 }
 
 // listen on port
-const port = process.env.PORT || 3000;
+const port = 1234 || 3000;
 app.listen(port, () => {
   console.log(`listening on ${port}`);
 });
